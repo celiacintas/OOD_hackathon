@@ -50,7 +50,7 @@ References:
 - Basic evaluation metrics and performance visualization.
 - Present preliminary results.
 
-Day 3 (only half day)
+#### Day 3 (only half day)
 
 - Tips \& Tricks for efective presentations. 
 - Prepare slides with proposed solution and comparisons.
