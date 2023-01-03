@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+## Auxiliary functions for the ipynb
 
 def show_samples(images, groundtruth):
     """
