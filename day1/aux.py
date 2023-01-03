@@ -1,0 +1,28 @@
+import matplotlib.pyplot as plt
+
+def show_samples(images, groundtruth):
+    """
+    Show examples of ISIC 2019 along with 
+    condition classification.
+    Input: paths, labels
+    Output: grid images
+    """
+    
+    f, axarr = plt.subplots(3, 4)
+    f.suptitle('Samples from ISIC 2019')
+    curr_row = 0
+    for index, name in enumerate(images[:12]):
+        # print(name.stem)
+        a = plt.imread(name)
+        # find the column by taking the current index modulo 3
+        col = index % 3
+        # plot on relevant subplot
+        axarr[col, curr_row].imshow(a)
+        axarr[col, curr_row].text(5, 5, 
+                                  str(groundtruth.loc[name.stem].idxmax(axis=0))
+                                  , bbox={'facecolor': 'white'})
+        if col == 2:
+            curr_row += 1
+
+    f.tight_layout()
+    return f
