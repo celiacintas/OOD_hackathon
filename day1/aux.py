@@ -31,3 +31,18 @@ def show_samples(images, groundtruth):
 
     f.tight_layout()
     return f
+
+def plot_pca(X_pca, y):
+    """
+    plot a 2D PCA for OOD samples
+    """
+    plt.figure()
+    colors = ["navy", "turquoise", "darkorange"]
+    lw = 2
+
+    for color, i, target_name in zip(colors, [0, 1], ["inliers", "outliers"]):
+        plt.scatter(
+            X_pca[y == i, 0], X_pca[y == i, 1], color=color, alpha=0.5, lw=lw, label=target_name
+        )
+    plt.legend(loc="best", shadow=False, scatterpoints=1)
+    plt.title("PCA of ISIC2019 dataset")
