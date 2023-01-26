@@ -60,7 +60,7 @@ References:
 ### Setup
 `$ python -m venv oodvenv`
 
-` source oodvenv/bin/activate`
+`$ source oodvenv/bin/activate`
 
 `$ pip install -r requirements.txt`
 
