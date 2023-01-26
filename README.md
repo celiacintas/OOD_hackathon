@@ -57,4 +57,11 @@ References:
 - Discuss lessons learned and limitations of the chosen approach.
 
 
+### Setup
+`$ python -m venv oodvenv`
 
+` source oodvenv/bin/activate`
+
+`$ pip install -r requirements.txt`
+
+`$ python -m notebook`
