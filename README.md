@@ -64,4 +64,6 @@ References:
 
 `$ pip install -r requirements.txt`
 
+`$ ipython kernel install --user --name=oodvenv`
+
 `$ python -m notebook`
