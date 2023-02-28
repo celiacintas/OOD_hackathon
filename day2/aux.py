@@ -31,7 +31,7 @@ def plot_re(groups, threshold_fixed):
             marker="o",
             ms=3.5,
             linestyle="",
-            label="IND" if name == 1 else "OOD",
+            label="IND" if name == 0 else "OOD",
         )
     ax.hlines(
         threshold_fixed,
